@@ -1,11 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chiranjibi Sah | Cybersecurity Enthusiast, Purple Team Learner</title>
+  <meta name="description" content="Portfolio of Chiranjibi Sah, a cybersecurity learner in Kathmandu, Nepal, studying offensive and defensive security (Purple Team) and looking for internship and entry-level opportunities.">
+  <meta name="author" content="Chiranjibi Sah">
+  <meta name="theme-color" content="#070b12">
+  <meta property="og:title" content="Chiranjibi Sah | Cybersecurity Enthusiast, Purple Team Learner">
+  <meta property="og:description" content="Learning offensive and defensive security. Labs, planned projects and learning roadmap.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23070b12'/%3E%3Cpath d='M8 10l8 6-8 6' fill='none' stroke='%2322d3ee' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18 23h7' stroke='%234ade80' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Chiranjibi Sah",
+    "homeLocation": { "@type": "Place", "name": "Kathmandu, Nepal" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Kalinga Institute of Industrial Technology (KIIT)" },
+    "sameAs": [
+      "https://github.com/Chiranjibi-sah",
+      "https://www.linkedin.com/in/chiranjibi-sah-0404a3384/"
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-prompt" aria-hidden="true">&gt;_</span>
+        <span>Chiranjibi Sah</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-label">Menu</span>
+      </button>
+
+      <nav id="site-nav" class="nav" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#labs">Labs &amp; Learning</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-kicker">CYBERSECURITY LEARNER</p>
+          <h1 id="hero-title">Chiranjibi Sah</h1>
+          <p class="hero-role">Cybersecurity Enthusiast | Purple Team | Offensive &amp; Defensive Security</p>
+          <p class="hero-tagline">Learning to think like an attacker and defend like a security analyst.</p>
+          <p class="hero-intro">
+            I am building practical cybersecurity skills across offensive and defensive security.
+            I explore vulnerabilities in authorized lab environments and study how security teams
+            detect, investigate, and respond to threats.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            <a class="btn btn-ghost" href="https://github.com/Chiranjibi-sah" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile of Chiranjibi Sah (opens in a new tab)">GitHub Profile</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/chiranjibi-sah-0404a3384/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile of Chiranjibi Sah (opens in a new tab)">LinkedIn Profile</a>
+          </div>
+        </div>
+
+        <figure class="terminal" aria-label="Illustrative example: an attack step in a lab and the matching log check">
+          <div class="terminal-bar">
+            <span class="dot dot-a" aria-hidden="true"></span>
+            <span class="dot dot-b" aria-hidden="true"></span>
+            <span class="dot dot-c" aria-hidden="true"></span>
+            <figcaption>purple-team-loop.txt (illustrative example)</figcaption>
+          </div>
+          <div class="terminal-body"><div class="line l1"><span class="t-red">red&nbsp;&nbsp;</span> <span class="t-dim">own lab VM: 10 failed SSH logins from my test machine</span></div><div class="line l2"><span class="t-blue">blue&nbsp;</span> <span class="t-dim">auth.log: 10 "Failed password" events found</span></div><div class="line l3"><span class="t-blue">blue&nbsp;</span> <span class="t-dim">rule: 5 failures in 60 seconds should alert</span></div><div class="line l4"><span class="t-green">check</span> <span class="t-dim">did the alert fire? was it useful?</span></div><div class="line l5"><span class="t-green">fix&nbsp;&nbsp;</span> <span class="t-dim">tune the rule, then test again</span></div><div class="line l6"><span class="t-prompt">lab@purple:~$</span> <span class="cursor" aria-hidden="true"></span></div></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container narrow">
+        <h2 id="about-title">About me</h2>
+        <p>
+          I am a Computer Science Engineering graduate based in Kathmandu, Nepal. I recently
+          completed my bachelor's degree at Kalinga Institute of Industrial Technology (KIIT)
+          in India with a CGPA of 8.43/10, and I am now focused on starting a career in cybersecurity.
+        </p>
+        <p>
+          What interests me most is seeing security from both sides. I want to understand how
+          vulnerabilities are discovered and validated, and how the same attacks appear in logs,
+          get detected and are contained. That is why I follow a Purple Team path instead of
+          choosing only offence or only defence.
+        </p>
+        <p>
+          I build practical knowledge through cybersecurity labs, self-directed learning, and
+          projects I plan to build. I try to work with curiosity, careful analysis and discipline,
+          and I test only systems I own or have permission to test. I am looking for internship
+          and entry-level opportunities where I can keep learning from experienced teams.
+        </p>
+        <p class="meta">Kathmandu, Nepal &nbsp;|&nbsp; B.Tech CSE, KIIT &nbsp;|&nbsp; CGPA 8.43/10</p>
+      </div>
+    </section>
+
+    <!-- ============ OFFENSIVE AND DEFENSIVE SECURITY ============ -->
+    <section id="purple-team" class="section section-alt" data-nav="about" aria-labelledby="purple-title">
+      <div class="container">
+        <h2 id="purple-title">Offensive and defensive security</h2>
+        <p class="section-lead">
+          Purple Team work connects the two sides. Offensive testing shows what is possible,
+          and defensive monitoring shows whether it would be noticed. These are my learning areas,
+          not claims of professional experience.
+        </p>
+
+        <div class="trio-grid">
+          <article class="card card-red">
+            <h3>Offensive security</h3>
+            <p class="card-desc">
+              <strong>Red Team.</strong> Understanding attacker techniques, performing authorized
+              security testing, identifying weaknesses, and validating vulnerabilities in controlled environments.
+            </p>
+            <p class="card-status">Learning focus</p>
+            <ul class="plain-list">
+              <li>Reconnaissance and information gathering</li>
+              <li>Networking and service enumeration</li>
+              <li>Web application security testing</li>
+              <li>HTTP requests and responses</li>
+              <li>Burp Suite fundamentals</li>
+              <li>OWASP Top 10 concepts</li>
+              <li>Vulnerability identification and validation</li>
+              <li>Basic scripting for security tasks</li>
+              <li>Authorized penetration-testing labs</li>
+            </ul>
+          </article>
+
+          <article class="card card-blue">
+            <h3>Defensive security</h3>
+            <p class="card-desc">
+              <strong>Blue Team.</strong> Monitoring logs, investigating suspicious activity,
+              identifying attacks, improving detection rules, and understanding incident response.
+            </p>
+            <p class="card-status">Learning focus</p>
+            <ul class="plain-list">
+              <li>Linux and networking fundamentals</li>
+              <li>Security log analysis</li>
+              <li>Failed-login investigation</li>
+              <li>Suspicious authentication patterns</li>
+              <li>Basic incident investigation</li>
+              <li>Security monitoring and detection fundamentals</li>
+              <li>Firewall and access-control concepts</li>
+              <li>SIEM fundamentals</li>
+              <li>Incident response concepts</li>
+            </ul>
+          </article>
+
+          <article class="card card-violet">
+            <h3>Purple Team</h3>
+            <p class="card-desc">
+              <strong>Both sides together.</strong> Connecting offensive testing with defensive
+              detection to improve an organization's overall security.
+            </p>
+            <p class="card-status">Learning focus</p>
+            <ul class="plain-list">
+              <li>Mapping attack techniques to defensive detections</li>
+              <li>Validating whether suspicious activity produces useful alerts</li>
+              <li>Recognising attack indicators in logs</li>
+              <li>Identifying detection gaps</li>
+              <li>Recommending improvements to monitoring and controls</li>
+              <li>Learning how offensive testing can strengthen defence</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Technical skills</h2>
+        <p class="section-lead">
+          Every skill carries an honest label instead of a score. Update the labels as you grow.
+        </p>
+
+        <ul class="legend" aria-label="What the skill labels mean">
+          <li><span class="tag t-learning">Learning</span> Actively studying it</li>
+          <li><span class="tag t-foundational">Foundational</span> Know the concepts, still building hands-on skill</li>
+          <li><span class="tag t-practising">Practising</span> Using it in labs</li>
+        </ul>
+
+        <!--
+          HOW TO EDIT SKILLS
+          Each skill is one line:
+            <li class="skill"><span>Skill name</span><span class="tag t-learning">Learning</span></li>
+          To change the label, edit BOTH the class and the word:
+            t-learning + Learning  |  t-foundational + Foundational  |  t-practising + Practising
+          To add a skill: copy one whole <li>...</li> line and paste it in a list.
+          To remove a skill: delete its <li>...</li> line.
+          To add a category: copy a whole <article class="card">...</article> block.
+          Only raise a label when it is true. The starting labels are cautious defaults.
+        -->
+        <div class="skill-grid">
+          <article class="card">
+            <h3>Networking</h3>
+            <ul class="skill-list">
+              <li class="skill"><span>TCP/IP fundamentals</span><span class="tag t-foundational">Foundational</span></li>
+              <li class="skill"><span>DNS</span><span class="tag t-foundational">Foundational</span></li>
+              <li class="skill"><span>HTTP/HTTPS</span><span class="tag t-foundational">Foundational</span></li>
+              <li class="skill"><span>Ports and protocols</span><span class="tag t-foundational">Foundational</span></li>
+              <li class="skill"><span>Firewalls and network security fundamentals</span><span class="tag t-learning">Learning</span></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Offensive security</h3>
+            <ul class="skill-list">
+              <li class="skill"><span>Burp Suite</span><span class="tag t-learning">Learning</span></li>
+              <li class="skill"><span>Web application security fundamentals</span><span class="tag t-learning">Learning</span></li>
+              <li class="skill"><span>Reconnaissance and enumeration concepts</span><span class="tag t-learning">Learning</span></li>
+              <li class="skill"><span>OWASP Top 10</span><span class="tag t-learning">Learning</span></li>
+              <li class="skill"><span>Authorized penetration-testing labs</span><span class="tag t-practising">Practising</span></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Defensive security</h3>
+            <ul class="skill-list">
+              <li class="skill"><span>Linux log analysis</span><span class="tag t-learning">Learning</span></li>
+              <li class="skill"><span>Authentication-event investigation</span><span class="tag t-learning">Learning</span></li>
+              <li class="skill"><span>Security monitoring fundamentals</span><span class="tag t-learning">Learning</span></li>
+              <li class="skill"><span>Threat detection concepts</span><span class="tag t-learning">Learning</span></li>
+              <li class="skill"><span>Incident response fundamentals</span><span class="tag t-learning">Learning</span></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Tools and platforms</h3>
+            <ul class="skill-list">
+              <li class="skill"><span>Kali Linux</span><span class="tag t-learning">Learning</span></li>
+              <li class="skill"><span>Burp Suite</span><span class="tag t-learning">Learning</span></li>
+              <li class="skill"><span>TryHackMe</span><span class="tag t-practising">Practising</span></li>
+              <li class="skill"><span>Git and GitHub</span><span class="tag t-foundational">Foundational</span></li>
+              <li class="skill"><span>Wireshark</span><span class="tag t-learning">Learning</span></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Programming and scripting</h3>
+            <ul class="skill-list">
+              <li class="skill"><span>HTML, CSS and JavaScript</span><span class="tag t-foundational">Foundational</span></li>
+              <li class="skill"><span>Python</span><span class="tag t-learning">Learning</span></li>
+              <li class="skill"><span>Basic automation concepts</span><span class="tag t-learning">Learning</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section section-alt" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+        <p class="section-lead">
+          These are planned projects. None of them has been built yet, and none is presented as
+          completed work. When you finish one, update its status and text.
+        </p>
+
+        <!--
+          HOW TO EDIT A PROJECT
+          1. When a project is truly finished, change the badge to:
+               <span class="badge badge-done">Completed</span>
+             and rewrite the text so it describes what you actually did and found.
+          2. To add a GitHub link later, paste this just before the closing </article> of that card:
+               <div class="card-links">
+                 <a class="card-link" href="https://github.com/Chiranjibi-sah/your-repo" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+               </div>
+          3. To add a project: copy a whole <article class="card project">...</article> block.
+        -->
+        <div class="project-grid">
+
+          <article class="card project">
+            <div class="project-head">
+              <h3>Web application security testing lab</h3>
+              <span class="badge badge-planned">Planned</span>
+            </div>
+            <p class="project-type">Offensive security</p>
+            <dl class="project-details">
+              <dt>Status</dt>
+              <dd>Planned. Not started.</dd>
+              <dt>Objective</dt>
+              <dd>A controlled web security testing project to understand common web application vulnerabilities and validate security weaknesses in an intentionally vulnerable application.</dd>
+              <dt>Learning topics</dt>
+              <dd>
+                <ul class="plain-list">
+                  <li>HTTP request and response analysis</li>
+                  <li>Burp Suite Proxy fundamentals</li>
+                  <li>Authentication and session-management concepts</li>
+                  <li>OWASP Top 10 vulnerability classes</li>
+                  <li>Writing clear vulnerability reports and mitigation advice</li>
+                </ul>
+              </dd>
+              <dt>Tools and technologies</dt>
+              <dd>Burp Suite Community Edition, an intentionally vulnerable application such as OWASP Juice Shop</dd>
+              <dt>Skills to demonstrate</dt>
+              <dd>Web testing method, evidence-based reporting, remediation thinking</dd>
+            </dl>
+          </article>
+
+          <article class="card project">
+            <div class="project-head">
+              <h3>Network reconnaissance and enumeration lab</h3>
+              <span class="badge badge-planned">Planned</span>
+            </div>
+            <p class="project-type">Offensive security</p>
+            <dl class="project-details">
+              <dt>Status</dt>
+              <dd>Planned. Not started.</dd>
+              <dt>Objective</dt>
+              <dd>A controlled lab for learning how to discover hosts, identify exposed services, understand network attack surfaces, and document security findings.</dd>
+              <dt>Learning topics</dt>
+              <dd>
+                <ul class="plain-list">
+                  <li>IP addresses and ports</li>
+                  <li>Service enumeration</li>
+                  <li>Basic Nmap usage</li>
+                  <li>Spotting unnecessary exposed services</li>
+                  <li>Documenting findings and remediation recommendations</li>
+                </ul>
+              </dd>
+              <dt>Tools and technologies</dt>
+              <dd>Nmap, a virtual machine lab on systems I own</dd>
+              <dt>Skills to demonstrate</dt>
+              <dd>Attack-surface mapping, clear documentation, remediation thinking</dd>
+              <dt>Ethics</dt>
+              <dd>Only systems I own or have explicit permission to test.</dd>
+            </dl>
+          </article>
+
+          <article class="card project">
+            <div class="project-head">
+              <h3>Failed-login detection and log analysis</h3>
+              <span class="badge badge-planned">Planned</span>
+            </div>
+            <p class="project-type">Defensive and Purple Team</p>
+            <dl class="project-details">
+              <dt>Status</dt>
+              <dd>Planned. Not started.</dd>
+              <dt>Objective</dt>
+              <dd>A defensive security project that analyzes authentication logs to identify repeated failed login attempts, suspicious patterns, and events that may need further investigation.</dd>
+              <dt>Possible features</dt>
+              <dd>
+                <ul class="plain-list">
+                  <li>Parse authentication log entries</li>
+                  <li>Count failed login attempts</li>
+                  <li>Group events by source IP when that data exists</li>
+                  <li>Flag configurable thresholds</li>
+                  <li>Show a simple report</li>
+                  <li>Explain false positives: repeated failures do not automatically prove an attack</li>
+                </ul>
+              </dd>
+              <dt>Tools and technologies</dt>
+              <dd>Python, sample authentication logs</dd>
+              <dt>Skills to demonstrate</dt>
+              <dd>Log parsing, detection logic, investigation judgement</dd>
+              <dt>Purple Team link</dt>
+              <dd>Generate failed logins against my own lab system, then check whether this detector flags them. Any gap becomes a rule to improve.</dd>
+            </dl>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LABS AND LEARNING ============ -->
+    <section id="labs" class="section" aria-labelledby="labs-title">
+      <div class="container">
+        <h2 id="labs-title">TryHackMe labs and learning</h2>
+        <p class="section-lead">
+          I practise cybersecurity hands-on by solving labs on TryHackMe. The areas below are what
+          I am currently studying.
+        </p>
+
+        <!--
+          Category labels: when you have really finished an area, change
+            <span class="tag t-learning">Learning area</span>
+          to
+            <span class="tag t-done">Completed</span>
+        -->
+        <div class="lab-grid">
+          <article class="card">
+            <h3>Networking fundamentals</h3>
+            <p>How data moves across networks, and the protocols and ports involved.</p>
+            <p class="lab-tag"><span class="tag t-learning">Learning area</span></p>
+          </article>
+          <article class="card">
+            <h3>Linux fundamentals</h3>
+            <p>Working at the command line, files, permissions and system logs.</p>
+            <p class="lab-tag"><span class="tag t-learning">Learning area</span></p>
+          </article>
+          <article class="card">
+            <h3>Web application security</h3>
+            <p>How web applications fail, and how those weaknesses are found and fixed.</p>
+            <p class="lab-tag"><span class="tag t-learning">Learning area</span></p>
+          </article>
+          <article class="card">
+            <h3>Offensive security</h3>
+            <p>Attacker techniques practised ethically in authorized lab environments.</p>
+            <p class="lab-tag"><span class="tag t-learning">Learning area</span></p>
+          </article>
+          <article class="card">
+            <h3>Defensive security</h3>
+            <p>Detecting, investigating and responding to suspicious activity.</p>
+            <p class="lab-tag"><span class="tag t-learning">Learning area</span></p>
+          </article>
+          <article class="card">
+            <h3>Security operations fundamentals</h3>
+            <p>How a security operations team monitors, triages and escalates alerts.</p>
+            <p class="lab-tag"><span class="tag t-learning">Learning area</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section section-alt" aria-labelledby="education-title">
+      <div class="container">
+        <h2 id="education-title">Education</h2>
+
+        <div class="edu-grid">
+          <article class="card card-edu">
+            <h3>Kalinga Institute of Industrial Technology (KIIT)</h3>
+            <p class="edu-degree">Bachelor's degree, Computer Science Engineering (CSE)</p>
+            <dl class="profile-list">
+              <dt>CGPA</dt>
+              <dd>8.43/10</dd>
+              <dt>Status</dt>
+              <dd>Completed</dd>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEARNING ROADMAP ============ -->
+    <section id="roadmap" class="section" data-nav="labs" aria-labelledby="roadmap-title">
+      <div class="container narrow">
+        <h2 id="roadmap-title">Learning roadmap</h2>
+        <p class="section-lead">
+          This is the direction I plan to follow. It is a roadmap, not a list of completed achievements.
+        </p>
+        <ol class="roadmap">
+          <li>Strengthen networking and Linux fundamentals.</li>
+          <li>Improve web application security testing skills.</li>
+          <li>Practise offensive-security labs ethically.</li>
+          <li>Learn log analysis and authentication-event investigation.</li>
+          <li>Explore SIEM tools and detection engineering.</li>
+          <li>Build projects that connect attack simulation with defensive monitoring.</li>
+          <li>Prepare for cybersecurity internships and entry-level roles.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CAREER GOALS ============ -->
+    <section id="opportunities" class="section section-alt" data-nav="contact" aria-labelledby="opportunities-title">
+      <div class="container narrow">
+        <h2 id="opportunities-title">Career goals and opportunities</h2>
+        <p class="section-lead">
+          I am interested in internship and entry-level roles where I can contribute, learn from
+          experienced professionals, and grow across both offensive and defensive security.
+        </p>
+        <ul class="role-list" aria-label="Roles I am interested in">
+          <li>Cybersecurity Intern</li>
+          <li>SOC Analyst Intern</li>
+          <li>Junior Security Analyst</li>
+          <li>Junior Penetration Testing Intern</li>
+          <li>Security Operations Intern</li>
+          <li>Entry-Level Cybersecurity Analyst</li>
+        </ul>
+        <p class="cta-line">
+          If your team is hiring for a role like these, I would be glad to hear from you.
+        </p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/chiranjibi-sah-0404a3384/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Chiranjibi Sah on LinkedIn (opens in a new tab)">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUOTE ============ -->
+    <section id="quote" class="quote-section" data-nav="contact" aria-label="Security quote">
+      <div class="container">
+        <figure class="quote">
+          <blockquote>
+            <p>&ldquo;Security is not a product, but a process&rdquo;</p>
+          </blockquote>
+          <figcaption><span aria-hidden="true">//</span> Bruce Schneier</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-alt" aria-labelledby="contact-title">
+      <div class="container narrow">
+        <h2 id="contact-title">Contact</h2>
+        <p class="section-lead">
+          Recruiters and cybersecurity professionals are welcome to contact me about internship and
+          entry-level opportunities, or to share advice on where to focus my learning.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:chiranjibisahh@gmail.com">chiranjibisahh@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/Chiranjibi-sah" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile of Chiranjibi Sah (opens in a new tab)">github.com/Chiranjibi-sah</a>
+          </li>
+          <li>
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/chiranjibi-sah-0404a3384/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile of Chiranjibi Sah (opens in a new tab)">linkedin.com/in/chiranjibi-sah-0404a3384</a>
+          </li>
+          <li>
+            <span class="contact-label">Location</span>
+            <span>Kathmandu, Nepal</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">Chiranjibi Sah</p>
+        <p>Cybersecurity and Purple Team learning focus.</p>
+        <p class="footer-copy">&copy; <span id="year">2026</span> Chiranjibi Sah</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#labs">Labs &amp; Learning</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="footer-links footer-social">
+          <li><a href="https://github.com/Chiranjibi-sah" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile of Chiranjibi Sah (opens in a new tab)">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/chiranjibi-sah-0404a3384/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile of Chiranjibi Sah (opens in a new tab)">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
